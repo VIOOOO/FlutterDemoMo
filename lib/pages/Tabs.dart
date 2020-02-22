@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'tabs/Home.dart';
 import 'tabs/Category.dart';
 import 'tabs/Setting.dart';
+import 'tabs/BasicFuns.dart';
 
 // Tab 组件02
 class Tabs extends StatefulWidget {
@@ -26,6 +27,7 @@ class _TabsState extends State<Tabs> {
   List _pageList = [
     HomePage(),
     CategoryPage(),
+    BasicFunsPage(),
     SettingPage(),
   ];
 
@@ -33,7 +35,7 @@ class _TabsState extends State<Tabs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter 路由'),
+        title: Text('Flutter 综合范例'),
       ),
       // 根据 tab 页签改变切换页面
       body: this._pageList[this._currentIndex],
@@ -48,7 +50,7 @@ class _TabsState extends State<Tabs> {
         },
         // iconSize: 25.0, // 图标大小
         // fixedColor: Colors.red, // 选中颜色
-        // type: BottomNavigationBarType.fixed, // 配置底部可以有多个按钮 大于3个需要该属性
+        type: BottomNavigationBarType.fixed, // 配置底部可以有多个按钮 大于3个需要该属性
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -57,6 +59,10 @@ class _TabsState extends State<Tabs> {
           BottomNavigationBarItem(
             icon: Icon(Icons.category),
             title: Text('分类'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.category),
+            title: Text('基础功能'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
