@@ -20,9 +20,7 @@ import '../pages/BasicFunctions/ListViewPage/ListViewDemoVertical.dart';
 import '../pages/BasicFunctions/ListViewPage/ListViewDemoDynamic.dart';
 import '../pages/BasicFunctions/ListViewPage/ListViewDemoRefresh.dart';
 import '../pages/BasicFunctions/ListViewPage/ListViewDemoAccordion.dart';
-// import '../pages/BasicFunctions//GridViewPage/GridView.dart';
-// import '../pages/BasicFunctions//GridViewPage/GridViewDemo.dart';
-// import '../pages/BasicFunctions//GridViewPage/GridViewDemoAccordion.dart';
+import '../pages/BasicFunctions//GridViewPage/GridView.dart';
 
 // 配置命名路由
 final routes = {
@@ -49,18 +47,13 @@ final routes = {
   // 水平基本列表
   '/listViewDemoLevel': (context) => ListViewDemoLevel(),
   // 垂直基本列表
-  '/listViewDemoVertical': (context) => ListViewDemoVertical(),  
+  '/listViewDemoVertical': (context) => ListViewDemoVertical(),
   // 动态列表
   '/listViewDemoDynamic': (context) => ListViewDemoDynamic(),
   // 多级展开列表 手风琴
   '/listViewDemoAccordion': (context) => ListViewDemoAccordion(),
-  // // 网格布局
-  // '/gridView': (context) => GridViewPage(),
-  // // 网格组件 基本类型
-  // '/gridViewDemo': (context) => GridViewDemo(),
-  // // 网格布局 多种类型类型  简单类型 复杂多级列表 
-  // '/gridViewDemoAccordion': (context) => GridViewDemoAccordion(),
-
+  // 网格布局
+  '/gridView': (context) => GridViewPage(),
 };
 
 //  固定路由写法
