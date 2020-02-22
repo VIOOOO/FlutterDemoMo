@@ -12,7 +12,7 @@ import '../pages/user/RegisterFirst.dart';
 import '../pages/user/RegisterSecond.dart';
 import '../pages/user/RegisterThrid.dart';
 
-// import '../pages/BasicFunctions/ImagesPage/Images.dart';
+import '../pages/BasicFunctions/ImagesPage/Images.dart';
 // import '../pages/BasicFunctions/ListViewPage/ListView.dart';
 
 
@@ -32,8 +32,8 @@ final routes = {
   '/registerSecond': (context)=>RegisterSecondPage(),
   '/registerThrid': (context)=>RegisterThridPage(),
 
-  // // 图片范例
-  // '/images': (context)=>ImagesPage(),
+  // 图片范例
+  '/images': (context)=>ImagesPage(),
   // '/listView': (context)=>ListViewPage(),
 
 
