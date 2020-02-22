@@ -12,7 +12,8 @@ import '../pages/user/RegisterFirst.dart';
 import '../pages/user/RegisterSecond.dart';
 import '../pages/user/RegisterThrid.dart';
 
-import '../pages/basic_functions/images_page/Images.dart';
+// import '../pages/BasicFunctions/ImagesPage/Images.dart';
+// import '../pages/BasicFunctions/ListViewPage/ListView.dart';
 
 
 // 配置命名路由
@@ -31,8 +32,9 @@ final routes = {
   '/registerSecond': (context)=>RegisterSecondPage(),
   '/registerThrid': (context)=>RegisterThridPage(),
 
-  // 图片范例
-  '/images': (context)=>ImagesPage(),
+  // // 图片范例
+  // '/images': (context)=>ImagesPage(),
+  // '/listView': (context)=>ListViewPage(),
 
 
 };
