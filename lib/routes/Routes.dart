@@ -12,11 +12,13 @@ import '../pages/user/RegisterFirst.dart';
 import '../pages/user/RegisterSecond.dart';
 import '../pages/user/RegisterThrid.dart';
 
+// Demo 基础功能组件
 import '../pages/BasicFunctions/ImagesPage/Images.dart';
 import '../pages/BasicFunctions/ListViewPage/ListView.dart';
 import '../pages/BasicFunctions/ListViewPage/ListViewDemoLevel.dart';
 import '../pages/BasicFunctions/ListViewPage/ListViewDemoVertical.dart';
 import '../pages/BasicFunctions/ListViewPage/ListViewDemoDynamic.dart';
+import '../pages/BasicFunctions/ListViewPage/ListViewDemoRefresh.dart';
 
 // 配置命名路由
 final routes = {
@@ -34,6 +36,7 @@ final routes = {
   '/registerFirst': (context) => RegisterFirstPage(),
   '/registerSecond': (context) => RegisterSecondPage(),
   '/registerThrid': (context) => RegisterThridPage(),
+  '/listViewDemoRefresh': (context) => ListViewDemoRefresh(),
 
   // 图片范例
   '/images': (context) => ImagesPage(),

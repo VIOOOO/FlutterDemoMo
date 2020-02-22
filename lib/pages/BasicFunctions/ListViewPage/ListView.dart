@@ -30,14 +30,21 @@ class _ListViewPageState extends State<ListViewPage> {
             RaisedButton(
               child: Text("基本列表-垂直列表 Vertical"),
               onPressed: () {
-                Navigator.pushNamed(context, '/ListViewDemoVertical');
+                Navigator.pushNamed(context, '/listViewDemoVertical');
               },
             ),
             SizedBox(height: 20),
             RaisedButton(
               child: Text("动态列表 Dynamic"),
               onPressed: () {
-                Navigator.pushNamed(context, '/ListViewDemoDynamic');
+                Navigator.pushNamed(context, '/listViewDemoDynamic');
+              },
+            ),
+            SizedBox(height: 20),
+                        RaisedButton(
+              child: Text("列表下拉 上拉刷新  Refresh"),
+              onPressed: () {
+                Navigator.pushNamed(context, '/listViewDemoRefresh');
               },
             ),
             SizedBox(height: 20),
