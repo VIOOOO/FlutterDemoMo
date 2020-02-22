@@ -13,8 +13,10 @@ import '../pages/user/RegisterSecond.dart';
 import '../pages/user/RegisterThrid.dart';
 
 import '../pages/BasicFunctions/ImagesPage/Images.dart';
-// import '../pages/BasicFunctions/ListViewPage/ListView.dart';
-
+import '../pages/BasicFunctions/ListViewPage/ListView.dart';
+import '../pages/BasicFunctions/ListViewPage/ListViewDemoLevel.dart';
+import '../pages/BasicFunctions/ListViewPage/ListViewDemoVertical.dart';
+import '../pages/BasicFunctions/ListViewPage/ListViewDemoDynamic.dart';
 
 // 配置命名路由
 final routes = {
@@ -26,17 +28,23 @@ final routes = {
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
 
   '/product': (context) => ProductPage(),
-  '/productInfo': (context, {arguments}) => ProductInfoPage(arguments: arguments),
-  '/login': (context)=>LoginPage(),
-  '/registerFirst': (context)=>RegisterFirstPage(),
-  '/registerSecond': (context)=>RegisterSecondPage(),
-  '/registerThrid': (context)=>RegisterThridPage(),
+  '/productInfo': (context, {arguments}) =>
+      ProductInfoPage(arguments: arguments),
+  '/login': (context) => LoginPage(),
+  '/registerFirst': (context) => RegisterFirstPage(),
+  '/registerSecond': (context) => RegisterSecondPage(),
+  '/registerThrid': (context) => RegisterThridPage(),
 
   // 图片范例
-  '/images': (context)=>ImagesPage(),
-  // '/listView': (context)=>ListViewPage(),
-
-
+  '/images': (context) => ImagesPage(),
+  // ListView基础列表组件
+  '/listView': (context) => ListViewPage(),
+  // 水平基本列表
+  '/listViewDemoLevel': (context) => ListViewDemoLevel(),
+  // 垂直基本列表
+  '/ListViewDemoVertical': (context) => ListViewDemoVertical(),  
+  // 动态列表
+  '/ListViewDemoDynamic': (context) => ListViewDemoDynamic(),
 };
 
 //  固定路由写法
