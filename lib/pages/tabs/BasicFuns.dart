@@ -28,12 +28,19 @@ class _BasicFunsPageState extends State<BasicFunsPage> {
             ),
             SizedBox(height: 20),
             RaisedButton(
-              child: Text("ListView基础列表组件"),
+              child: Text("ListView 列表组件"),
               onPressed: () {
                 Navigator.pushNamed(context, '/listView');
               },
             ),
             SizedBox(height: 20),
+            // RaisedButton(
+            //   child: Text("GridView 网格组件"),
+            //   onPressed: () {
+            //     Navigator.pushNamed(context, '/gridView');
+            //   },
+            // ),
+            // SizedBox(height: 20),
           ],
         ),
       ),

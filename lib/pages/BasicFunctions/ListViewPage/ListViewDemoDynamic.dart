@@ -69,7 +69,7 @@ class _ListViewDemoDynamicState extends State<ListViewDemoDynamic> {
           shrinkWrap: true,
           children: <Widget>[
             Text('动态列表几种不同方法实现'),
-            SizedBox(height: 20),
+            SizedBox(height: 60),
             Text('动态列表4'),
             ListView.builder(
               // 解决限高
@@ -79,7 +79,7 @@ class _ListViewDemoDynamicState extends State<ListViewDemoDynamic> {
               itemCount: listData.length, // 列表长度 必须
               itemBuilder: this._getListData, // 不需要写() ,表示赋值。加()表示执行方法
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 60),
             Text('动态列表3'),
             ListView.builder(
               // 解决限高
@@ -91,8 +91,8 @@ class _ListViewDemoDynamicState extends State<ListViewDemoDynamic> {
                 return this.list[index];
               },
             ),
-            SizedBox(height: 20),
-            Text('动态列表2'),
+            SizedBox(height: 60),
+            Text('动态列表2 自定义方法'),
             ListView(
               // 解决限高
               shrinkWrap: true,
@@ -100,8 +100,8 @@ class _ListViewDemoDynamicState extends State<ListViewDemoDynamic> {
               physics: new NeverScrollableScrollPhysics(),
               children: this._getData2(),
             ),
-            SizedBox(height: 20),
-            Text('动态列表1'),
+            SizedBox(height: 60),
+            Text('动态列表1 自定义方法'),
             ListView(
               // 解决限高
               shrinkWrap: true,
@@ -109,7 +109,7 @@ class _ListViewDemoDynamicState extends State<ListViewDemoDynamic> {
               physics: new NeverScrollableScrollPhysics(),
               children: this._getData(),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 60),
           ],
         ),
       ),
