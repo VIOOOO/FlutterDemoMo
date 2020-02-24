@@ -84,9 +84,9 @@ class ListViewDemoLevel extends StatelessWidget {
             Container(
               height: 200, // 水平滚动高度 默认是填满整个区域
               child: ListView(
-                // // 解决限高
+                // // 解决无限高度问题
                 // shrinkWrap: true,
-                // // 解决不滚动
+                // // 禁用滑动事件
                 // physics: new NeverScrollableScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 children: _buildList(),

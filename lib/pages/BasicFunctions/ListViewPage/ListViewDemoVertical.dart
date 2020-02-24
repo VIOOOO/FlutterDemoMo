@@ -42,15 +42,15 @@ class ListViewDemoVertical extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(10),
         child: ListView(
-          // 解决限高
+          // 解决无限高度问题
           shrinkWrap: true,
           children: <Widget>[
             SizedBox(height: 20),
             Text('垂直列表1'),
             ListView(
-              // 解决限高
+              // 解决无限高度问题
               shrinkWrap: true,
-              // 解决不滚动
+              // 禁用滑动事件
               physics: new NeverScrollableScrollPhysics(),
               children: <Widget>[
                 Text("一、垂直列表 左右插入图标、图片"),
@@ -173,9 +173,9 @@ class ListViewDemoVertical extends StatelessWidget {
             SizedBox(height: 20),
             Text('垂直列表2 封装方法实现'),
             ListView(
-              // 解决限高
+              // 解决无限高度问题
               shrinkWrap: true,
-              // 解决不滚动
+              // 禁用滑动事件
               physics: new NeverScrollableScrollPhysics(),
               children: _buildList(),
             ),
