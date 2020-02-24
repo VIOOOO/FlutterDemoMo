@@ -26,21 +26,21 @@ class _BasicFunsPageState extends State<BasicFunsPage> {
                 Navigator.pushNamed(context, '/images');
               },
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 6),
             RaisedButton(
               child: Text("ListView 列表组件"),
               onPressed: () {
                 Navigator.pushNamed(context, '/listView');
               },
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 6),
             RaisedButton(
               child: Text("GridView 网格组件"),
               onPressed: () {
                 Navigator.pushNamed(context, '/gridView');
               },
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 6),
           ],
         ),
       ),

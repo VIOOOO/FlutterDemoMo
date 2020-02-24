@@ -128,13 +128,13 @@ class ListViewDemoAccordion extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(10),
         child: ListView(
-          // 解决限高
+          // 解决无限高度问题
           shrinkWrap: true,
           children: <Widget>[
             ListView(
-              // 解决限高
+              // 解决无限高度问题
               shrinkWrap: true,
-              // 解决不滚动
+              // 禁用滑动事件
               physics: new NeverScrollableScrollPhysics(),
               children: _buildList_ex(),
             ),
